@@ -1,0 +1,44 @@
+<h2>{{ title }}</h2>
+<svg width="900" height="500"></svg>
+<br>
+<h2>Create Your Own Graph!</h2>
+<table border=1>
+  <tr> 
+    <th>Date</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td>2019-01-01</td>
+    <td><input type="number" [(ngModel)]="oneval"  #one>
+    </td>
+  </tr>
+  <tr>
+    <td>2019-02-01</td>
+    <td><input type="number" [(ngModel)]="twoval" #two>
+
+    </td>
+  </tr>
+  <tr>
+    <td>2019-03-01</td>
+    <td><input type="number" [(ngModel)]="threeval" #three>
+    </td>
+
+  </tr>
+  <tr>
+    <td>2019-04-01</td>
+    <td><input type="number" [(ngModel)]="fourval" #four>
+
+    </td>
+
+  </tr>
+  <tr>
+    <td>2019-05-01</td>
+    <td><input type="number" [(ngModel)]="fiveval" #five>
+    </td>
+
+  </tr>
+  
+</table>
+
+
+<button (click)="changegraph(one, two,three, four ,five)">SUBMIT</button>
